@@ -233,3 +233,28 @@ html[lang="en"] .tags > [data-l="fr"], html[lang="fr"] .tags > [data-l="en"] { d
   .sheet { transform: none !important; transition: opacity .2s ease; }
   .card:active, .btn:active, .seg button:active, .sheet__close:active { transform: none; }
 }
+
+/* ---------- Photos ---------- */
+.hero__photo {
+  display: block; width: 6rem; height: 6rem; margin-bottom: 1.25rem;
+  border-radius: 50%; object-fit: cover;
+  box-shadow: 0 0 0 4px var(--surface), var(--shadow);
+}
+.card { overflow: hidden; }
+.card__img {
+  display: block; width: calc(100% + 2.5rem); max-width: none;
+  margin: -1.15rem -1.25rem .6rem;
+  aspect-ratio: 16 / 9; object-fit: cover;
+  background: var(--press);
+}
+.sheet__img {
+  display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover;
+  border-radius: .875rem; margin: 0 0 1.25rem;
+  background: var(--press);
+}
+.sheet__img--full { aspect-ratio: auto; margin-top: .5rem; border: 1px solid var(--hair); }
+.pos-hydrogen { object-position: 50% 30%; }
+.pos-top { object-position: 50% 0; }
+.sheet__fig { margin: 0 0 1.25rem; }
+.sheet__fig .sheet__img { margin-bottom: .5rem; }
+.sheet__fig figcaption { font-size: .875rem; color: var(--text-2); }
